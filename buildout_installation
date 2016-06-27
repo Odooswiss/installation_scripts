@@ -4,7 +4,7 @@ echo "deb http://apt.anybox.fr/openerp common main" | sudo tee -a /etc/apt/sourc
 sudo apt-key adv --keyserver hkp://subkeys.pgp.net --recv-keys 0xE38CEB07
 sudo aptitude update
 sudo aptitude install openerp-server-system-build-deps
-#wget https://raw.github.com/buildout/buildout/master/bootstrap/bootstrap.py
+wget https://github.com/buildout/buildout/blob/master/bootstrap/bootstrap.py
 sudo apt-get install virtualenv
 virtualenv sandbox --no-setuptools
 sandbox/bin/python bootstrap.py
