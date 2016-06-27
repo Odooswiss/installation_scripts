@@ -7,8 +7,5 @@ sudo aptitude install openerp-server-system-build-deps
 #wget https://raw.github.com/buildout/buildout/master/bootstrap/bootstrap.py
 sudo apt-get install virtualenv
 virtualenv sandbox --no-setuptools
-sandbox/bin/pip uninstall -y setuptools pip
 sandbox/bin/python bootstrap.py
-git config --global user.email admin@seedoo.it
-git config --global user.name seedoo
 bin/buildout
